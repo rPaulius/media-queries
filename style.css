@@ -1,3 +1,36 @@
 body {
     margin: 0;
 }
+
+h1 {
+    margin: 0;
+    color: white;
+    background-color: darkslategrey;
+    font-family: monospace;
+    text-align: center;
+    padding: 50px;
+}
+/* ekrano plotis mazesnis arba lygus 1200px */
+@media (max-width: 1200px) {
+    h1 {
+        background-color: black;
+        color: darkslategrey;
+    }
+
+}
+
+/* ekrano plotis didesnis arba lygus 800px */
+@media (min-width: 800px) {
+    body {
+        background: orange;
+    }
+}
+
+
+/* ekrano aukstis didesnis arba lygus 700px */
+@media (max-height: 600px) {
+    h1:after {
+        content: "MEDIA";
+    }
+}
+
